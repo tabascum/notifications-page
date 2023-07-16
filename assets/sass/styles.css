@@ -28,21 +28,11 @@ body {
   border-radius: 1rem;
   box-shadow: 0.5rem 0.5rem 2rem hsl(211, 68%, 94%);
 }
-@media (max-width: 500px) {
-  .main-nt-wrapper {
-    padding-inline: 1rem;
-  }
-}
 .main-nt-wrapper .main-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding-block: 2rem;
-}
-@media (max-width: 500px) {
-  .main-nt-wrapper .main-header {
-    padding-block: 1.5rem;
-  }
 }
 .main-nt-wrapper .main-header div {
   display: inherit;
@@ -50,11 +40,6 @@ body {
   justify-content: center;
   text-align: center;
   gap: 1rem;
-}
-@media (max-width: 500px) {
-  .main-nt-wrapper .main-header div {
-    gap: 0.5rem;
-  }
 }
 .main-nt-wrapper .main-header div h1 {
   font-size: 1.5rem;
@@ -110,10 +95,6 @@ body {
 .main-nt-wrapper .nt-wrapper .nt-card .post:hover {
   color: hsl(219, 85%, 26%);
 }
-.main-nt-wrapper .nt-wrapper .nt-card .fa-circle {
-  color: hsl(1, 90%, 64%);
-  margin-inline-start: 0.3rem;
-}
 .main-nt-wrapper .nt-wrapper .nt-card .club {
   color: hsl(219, 85%, 26%);
 }
@@ -123,21 +104,18 @@ body {
 .main-nt-wrapper .nt-wrapper :nth-child(4) > :nth-child(2) > :nth-child(2) {
   padding: 1rem;
   border-radius: 0.3rem;
-  margin-block-start: 0.5rem;
+  -webkit-margin-before: 0.5rem;
+          margin-block-start: 0.5rem;
   border: 1px solid hsl(205, 33%, 90%);
   cursor: pointer;
-  transition: all 0.4s;
 }
-.main-nt-wrapper .nt-wrapper :nth-child(4) > :nth-child(2) > :nth-child(2):hover {
+.main-nt-wrapper .nt-wrapper :nth-child(4) > :nth-child(2) > :nth-child(2) :hover {
   background-color: hsl(205, 33%, 90%);
 }
 .main-nt-wrapper .nt-wrapper :nth-child(5) {
   justify-content: space-between;
-  align-items: start;
 }
 .main-nt-wrapper .nt-wrapper :nth-child(5) > div {
   display: flex;
   gap: 0.5rem;
-}
-
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=styles.css.map */

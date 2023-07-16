@@ -21,11 +21,19 @@ body {
   border-radius: 1rem;
   box-shadow: 0.5rem 0.5rem 2rem base.$light-grayish-blue-1;
 
+  @media (max-width: 500px) {
+    padding-inline: 1rem;
+  }
+
   .main-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding-block: 2rem;
+
+    @media (max-width: 500px) {
+      padding-block: 1.5rem;
+    }
 
     div {
       display: inherit;
@@ -33,6 +41,10 @@ body {
       justify-content: center;
       text-align: center;
       gap: 1rem;
+
+      @media (max-width: 500px) {
+        gap: 0.5rem;
+      }
 
       h1 {
         font-size: 1.5rem;
@@ -100,6 +112,11 @@ body {
         color: base.$blue;
       }
 
+      .fa-circle {
+        color: base.$red;
+        margin-inline-start: 0.3rem;
+      }
+
       .club {
         color: base.$blue;
       }
@@ -113,12 +130,18 @@ body {
           border-radius: 0.3rem;
           margin-block-start: 0.5rem;
           border: 1px solid base.$light-grayish-blue-2;
+          cursor: pointer;
+          transition: all 0.4s;
+        }
+        > :nth-child(2):hover {
+          background-color: base.$light-grayish-blue-2;
         }
       }
     }
 
     :nth-child(5) {
       justify-content: space-between;
+      align-items: start;
     }
 
     :nth-child(5) > div {
