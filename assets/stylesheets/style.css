@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:wght@800&family=Plus+Jakarta+Sans:wght@500;800&display=swap");
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 16px;
+  color: hsl(219, 12%, 42%);
+  font-family: "Plus Jakarta Sans", sans-serif;
+  background-color: hsl(210, 60%, 98%);
+}
+
+.main-nt-wrapper {
+  max-height: 100vh;
+  max-width: 710px;
+  background-color: hsl(0, 0%, 100%);
+  padding-inline: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0.5rem 0.5rem 2rem hsl(211, 68%, 94%);
+}
+.main-nt-wrapper .main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-block: 2rem;
+}
+.main-nt-wrapper .main-header div {
+  display: inherit;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 1rem;
+}
+.main-nt-wrapper .main-header div h1 {
+  font-size: 1.5rem;
+  color: hsl(224, 21%, 14%);
+}
+.main-nt-wrapper .main-header div #header-counter {
+  background-color: hsl(219, 85%, 26%);
+  padding: 0.18rem 0.6rem;
+  width: 2rem;
+  font-size: 1rem;
+  text-align: center;
+  color: hsl(0, 0%, 100%);
+  font-weight: 800;
+  border-radius: 0.5rem;
+}
+.main-nt-wrapper .main-header p {
+  text-align: end;
+}
+.main-nt-wrapper .main-header #read-marks:hover {
+  cursor: pointer;
+  color: hsl(219, 85%, 26%);
+}
+.main-nt-wrapper .nt-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.main-nt-wrapper .nt-wrapper > :nth-child(-n+3) {
+  background-color: hsl(210, 60%, 98%);
+}
+.main-nt-wrapper .nt-wrapper .nt-card {
+  display: flex;
+  align-items: center;
+  border-radius: 0.6rem;
+  padding: 1rem;
+  gap: 1rem;
+}
+.main-nt-wrapper .nt-wrapper .nt-card picture {
+  max-height: 2.5rem;
+  max-width: 2.5rem;
+}
+.main-nt-wrapper .nt-wrapper .nt-card img {
+  max-height: 100%;
+  max-width: 100%;
+}
+.main-nt-wrapper .nt-wrapper .nt-card b {
+  cursor: pointer;
+}
+.main-nt-wrapper .nt-wrapper .nt-card .name {
+  color: hsl(224, 21%, 14%);
+}
+.main-nt-wrapper .nt-wrapper .nt-card .name:hover,
+.main-nt-wrapper .nt-wrapper .nt-card .post:hover {
+  color: hsl(219, 85%, 26%);
+}
+.main-nt-wrapper .nt-wrapper .nt-card .club {
+  color: hsl(219, 85%, 26%);
+}
+.main-nt-wrapper .nt-wrapper :nth-child(4) {
+  align-items: flex-start;
+}
+.main-nt-wrapper .nt-wrapper :nth-child(4) > :nth-child(2) > :nth-child(2) {
+  padding: 1rem;
+  border-radius: 0.3rem;
+  margin-block-start: 0.5rem;
+  border: 1px solid hsl(205, 33%, 90%);
+}
+.main-nt-wrapper .nt-wrapper :nth-child(5) {
+  justify-content: space-between;
+}
+.main-nt-wrapper .nt-wrapper :nth-child(5) > div {
+  display: flex;
+  gap: 0.5rem;
+}
+
+/*# sourceMappingURL=style.css.map */

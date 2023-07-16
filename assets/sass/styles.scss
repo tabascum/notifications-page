@@ -1,0 +1,129 @@
+@use "base";
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  font-size: base.$fs-text;
+  color: base.$dark-grayish-blue;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  background-color: base.$very-light-grayish-blue;
+}
+
+.main-nt-wrapper {
+  max-height: 100vh;
+  max-width: 710px;
+  background-color: base.$white;
+  padding-inline: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0.5rem 0.5rem 2rem base.$light-grayish-blue-1;
+
+  .main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-block: 2rem;
+
+    div {
+      display: inherit;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      gap: 1rem;
+
+      h1 {
+        font-size: 1.5rem;
+        color: base.$very-dark-blue;
+      }
+
+      #header-counter {
+        background-color: base.$blue;
+        padding: 0.18rem 0.6rem;
+        width: 2rem;
+        font-size: 1rem;
+        text-align: center;
+        color: base.$white;
+        font-weight: base.$fw-bold;
+        border-radius: 0.5rem;
+      }
+    }
+
+    p {
+      text-align: end;
+    }
+
+    #read-marks:hover {
+      cursor: pointer;
+      color: base.$blue;
+    }
+  }
+
+  .nt-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+
+    > :nth-child(-n + 3) {
+      background-color: base.$very-light-grayish-blue;
+    }
+
+    .nt-card {
+      display: flex;
+      align-items: center;
+      border-radius: 0.6rem;
+      padding: 1rem;
+      gap: 1rem;
+
+      picture {
+        max-height: 2.5rem;
+        max-width: 2.5rem;
+      }
+
+      img {
+        max-height: 100%;
+        max-width: 100%;
+      }
+
+      b {
+        cursor: pointer;
+      }
+
+      .name {
+        color: base.$very-dark-blue;
+      }
+
+      .name:hover,
+      .post:hover {
+        color: base.$blue;
+      }
+
+      .club {
+        color: base.$blue;
+      }
+    }
+
+    :nth-child(4) {
+      align-items: flex-start;
+      > :nth-child(2) {
+        > :nth-child(2) {
+          padding: 1rem;
+          border-radius: 0.3rem;
+          margin-block-start: 0.5rem;
+          border: 1px solid base.$light-grayish-blue-2;
+        }
+      }
+    }
+
+    :nth-child(5) {
+      justify-content: space-between;
+    }
+
+    :nth-child(5) > div {
+      display: flex;
+      gap: 0.5rem;
+    }
+  }
+}
