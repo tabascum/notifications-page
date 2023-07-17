@@ -20,9 +20,9 @@ body {
   padding-inline: 2rem;
   border-radius: 1rem;
   box-shadow: 0.5rem 0.5rem 2rem base.$light-grayish-blue-1;
+  overflow: auto;
 
   @media (max-width: 500px) {
-    max-height: 100%;
     max-width: 400px;
     padding-inline: 1rem;
   }
